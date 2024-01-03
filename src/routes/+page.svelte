@@ -1,6 +1,11 @@
 <script>
   import logo from "$lib/img/logo.png";
   import background from "$lib/img/background.png";
+  import { onMount } from "svelte";
+  import { Autentification } from "$lib/index.js";
+  onMount(() => {
+    Autentification();
+  });
 </script>
 
 <img src={background} alt="" class="background" />
